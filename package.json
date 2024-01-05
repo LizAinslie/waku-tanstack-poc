@@ -14,6 +14,7 @@
     "@tanstack/react-cross-context": "^1.1.5",
     "@tanstack/react-router": "^1.1.5",
     "@tanstack/react-router-server": "^1.1.5",
+    "@tanstack/router-devtools": "^1.1.5",
     "hono": "3.11.7",
     "react": "18.3.0-canary-0cdfef19b-20231211",
     "react-dom": "18.3.0-canary-0cdfef19b-20231211",
