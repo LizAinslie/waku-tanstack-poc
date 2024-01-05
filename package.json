@@ -5,8 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "waku dev",
-    "build": "waku build --with-ssr",
-    "start": "waku start --with-ssr"
+    "build": "pnpm clean && waku build --with-ssr",
+    "start": "waku start --with-ssr",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@hono/node-server": "1.3.3",
@@ -24,6 +25,7 @@
     "@types/react": "18.2.45",
     "@types/react-dom": "18.2.17",
     "@vitejs/plugin-react": "4.2.1",
+    "rimraf": "^5.0.5",
     "typescript": "5.3.3",
     "vite": "5.0.9"
   },

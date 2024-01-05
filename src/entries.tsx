@@ -1,13 +1,15 @@
-import { lazy } from 'react';
 import { defineEntries } from 'waku/server';
+import { StartServer } from "./lib/router-server.js";
+import * as React from "react";
+import { createRouter } from './router.js';
 
-const App = lazy(() => import('./components/App.js'));
+const router = createRouter();
 
 export default defineEntries(
   // renderEntries
   async (input) => {
     return {
-      App: <App />,
+      App: <StartServer router={router} />,
     };
   },
   // getBuildConfig
